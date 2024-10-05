@@ -26,7 +26,7 @@ pipeline {
 			    bat "docker rm -f config-server"
 			    bat "docker rmi -f config-image"
 			    bat "docker build -t config-image ."
-                bat "docker run -p 8090:8090 -d --name config-server config-image"
+                bat "docker run -p 8088:8088 -d --name config-server config-image"
             }
 		}
 	}
