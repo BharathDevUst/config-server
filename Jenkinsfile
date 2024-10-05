@@ -7,7 +7,7 @@ pipeline {
 	stages {
 		stage('Clone'){
 			steps {
-			    git url: "https://github.com/bharathdevust/service-registry.git",
+			    git url: "https://github.com/bharathdevust/config-server.git",
 			    branch: "master"
 			}
 		}
